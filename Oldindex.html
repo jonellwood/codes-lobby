@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="900">
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+   
+    <script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js" type="text/javascript">
+    </script>
+    <script>
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =
+          h + ":" + m + ":" + s;
+          var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        </script>
+    <title>City Hall Lobby</title>
+
+
+</head>
+
+<body onload="startTime()">
+
+    <div class="welcome">
+        Welcome to the City of Hanahan City Hall
+    </div>
+
+    <div class="weather">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/32d93n80d00/hanahan/?unit=us" data-label_1="HANAHAN"
+            data-label_2="WEATHER" data-theme="original">HANAHAN WEATHER</a>
+        <script>
+            ! function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = 'https://weatherwidget.io/js/widget.min.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, 'script', 'weatherwidget-io-js');
+        </script>
+    </div>
+
+    <div id="a91_syndication">
+        <script src="https://access.active911.com/interface/js.php?r3vdjlp" type="text/javascript"></script>
+    </div>
+    <div id='a91_map'>
+        <script type="text/javascript">
+            try {
+                a91.init({ 'show_alarm_titles': true, 'show_alarm_addresses':  true, 'abbreviate_addresses': true,
+                    'api_key': 'AIzaSyBs1WTNIZO_JchE6N4qF_eQGII2xsJJj-4'
+                });
+            } catch (e) {}
+        </script>
+    </div>
+
+    
+
+    <div class="news2">
+         <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="134930/"></script> 
+    </div>
+    <div id="txt"></div>
+    <div id="background"></div>
+    <div class="background-container">
+        <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt=""> -->
+        <!-- <div class="stars"></div> -->
+        <!-- <div class="twinkling"></div> -->
+        <div class="clouds"></div>
+
+</body>
+</html>
