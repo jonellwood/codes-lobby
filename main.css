@@ -172,8 +172,8 @@ section{
     bottom: 0;
     left: 50%;
     width: 100%;
-    max-width: 880px;
-    max-height: 880px;
+    /* max-width: 880px;
+    max-height: 880px; */
     transform: translate(-50%, 0);
     /* border: 20px solid #fff; */
     border-radius: 50px;
