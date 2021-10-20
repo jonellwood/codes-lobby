@@ -57,6 +57,11 @@ h3 {
   box-shadow: 2px 2px 15px grey;
   background-color: white;
 }
+.card img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 #txt {
   text-align: center;
   font-size: 84px;
@@ -196,8 +201,4 @@ html {
   background-size: 100%;
   transform-style: preserve-3d;
   backface-visibility: visible;
-}
-.staff-image {
-  margin-left: auto;
-  margin-right: auto;
 }
