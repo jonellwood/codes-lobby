@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="refresh" content="900"> -->
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="turk_style.css" rel="stylesheet" type="text/css">
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+
+    <script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js" type="text/javascript">
+    </script>
+    <script>
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =
+          h + ":" + m + ":" + s;
+          var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        </script>
+          <script>
+            function checkTime(i) {
+              if (i < 10) {
+                i = "0" + i
+              }; // add zero in front of numbers < 10
+              return i;
+            }
+            setTimeout(function () {
+              window.location.reload(1);
+            }, 120000);
+          </script>
+    <title>Building and Codes Lobby</title>
+
+
+</head>
+
+<body onload="startTime()">
+  <div class="weather">
+    <a class="weatherwidget-io" href="https://forecast7.com/en/32d93n80d00/hanahan/?unit=us" data-label_1="HANAHAN"
+    data-label_2="WEATHER" data-theme="original">HANAHAN WEATHER</a>
+    <script>
+      ! function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = 'https://weatherwidget.io/js/widget.min.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      }(document, 'script', 'weatherwidget-io-js');
+      </script>
+    </div>
+    <div class="wrapper">
+      <div class="falling-leaves"></div>
+      <!-- <div class=news2">
+        <h2>Here's what's happening</h2>
+        <table>
+          <th>You can submit requests online</th>
+          <td>Go to www.asdfasf.com to submit your requests for permits and shit</td>
+        </table>
+      </div> -->
+      
+
+      <div class="staff">
+        <div class="card">
+          <img src="https://cdn2.cityofhanahan.com/wp-content/uploads/2018/01/15090222/IMG_7927-200x200.jpg" alt="Larry" style="width:75%">
+          <div class="container">
+            <h4 class="employee">Larry Sturdivant</h4>
+            <p class="title">Building Official</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://cdn2.cityofhanahan.com/wp-content/uploads/2021/08/31104858/Alexis-Kiser-200x200.jpg" alt="Alexis" style="width:75%">
+          <div class="container">
+            <h4 class="employee">Alexis Kiser</h4>
+            <p class="title">Planner / Economic Developer</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://cdn2.cityofhanahan.com/wp-content/uploads/2019/06/10141747/D-Porter-200x200.jpg" alt="Denise" style="width:75%" >
+          <div class="container">
+            <h4 class="employee">Denise Porter</h4>
+            <p class="title">Business License Official</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://cdn2.cityofhanahan.com/wp-content/uploads/2018/03/15085726/IMG_7871-200x200.jpg" alt="Tyler" style="width:75%">
+          <div class="container">
+            <h4 class="employee">Tyler Dempsey </h4>
+            <p class="title">Code Enforcement</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://cdn2.cityofhanahan.com/wp-content/uploads/2018/01/24063257/IMG_0576-200x200.jpg" alt="Karen" style="width:75%">
+          <div class="container">
+            <h4 class="employee">Karen Hagood</h4>
+            <p class="title">Animal Control</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://www.nicepng.com/png/detail/741-7413169_placeholder-female.png" alt="Kappy" style="width:75%">
+          <div class="container">
+            <h4 class="employee">Kappy</h4>
+            <p class="title">Air Traffic Controller</p>
+          </div>
+        </div>
+      </div>
+      <div class="news2">
+        <!-- <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="134930/"></script> -->
+        <h2>Here's what's happening</h2>
+        <h3>NEWS HEADLINES </h3>
+        <span class="news-item">If we had news - it would be here</span>
+        <h3>We have a new City Planner</h3>
+          <span class="news-item">Alexis Kiser will be taking over the role of City Planner and Economic Developer for the City. Stop in and say hello!</span>
+        <h3>You can submit permit requests online</h3>
+          <span class="news-item">Go to hanahan.cityforceinc.com/connect to submit requests for building permits, to schedule inspections, and many other permit related functions.</span>
+
+        <h3>Renew your business License Online!</h3>
+          <span class="news-item">Business License renewals have never been easier. Access your account and pay your renewal online at localblrenewal.com</span>
+        
+      
+        </div>
+    
+        <div class="JT">
+            <div class="JT-leg JT-leg_left">
+              <div class="JT-leg-shin"></div>
+              <div class="JT-leg-foot JT-leg-foot-left"></div>
+            </div>
+            <div class="JT-leg JT-leg_right">
+              <div class="JT-leg-shin"></div>
+              <div class="JT-leg-foot JT-leg-foot-right"></div>
+            </div>
+            <div class="JT-bounce">
+              <div class="JT-rock">
+              <div class="JT-shake">
+                <div class="JT-feathers">
+                  <div class="JT-feather JT-feather-0"></div>
+                  <div class="JT-feather JT-feather-1"></div>
+                  <div class="JT-feather JT-feather-2"></div>
+                  <div class="JT-feather JT-feather-3"></div>
+                  <div class="JT-feather JT-feather-4"></div>
+                  <div class="JT-feather JT-feather-9"></div>
+                  <div class="JT-feather JT-feather-8"></div>
+                  <div class="JT-feather JT-feather-7"></div>
+                  <div class="JT-feather JT-feather-6"></div>
+                  <div class="JT-feather JT-feather-5"></div>
+                </div>
+                <div class="JT-bod"></div>
+                <div class="JT-sign">EET BEEF</div>
+              </div>
+              <div class="JT-head"></div>
+              <div class="JT-eye JT-eye-right">
+                <div class="JT-eye-iris"></div>
+              </div>
+              <div class="JT-eye JT-eye-left">
+                <div class="JT-eye-iris"></div>
+              </div>
+              <div class="JT-beak"></div>
+              <div class="JT-hat">
+                <div class="JT-hat-brim"></div>
+                <div class="JT-hat-pipe"></div>
+              </div>
+            </div>
+            </div>
+          </div>
+    
+    </div>
+        <div id="txt"></div>
+        <div id="background"></div>
+    </div>
+
+  <div class="pageFooter">
+    <center><small><b> &#xA9 Jon Ellwood 2021</b></small></center>
+	</div>
+  <script src="leafscene.js"></script>
+</body>
+</html>
