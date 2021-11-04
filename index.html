@@ -10,8 +10,32 @@
     <link href="turk_style.css" rel="stylesheet" type="text/css">
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-
+   
     <script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js" type="text/javascript">
+    </script>
+    <script>
+      function shuffle() {
+      var container = document.getElementById("staff");
+      var elementsArray = Array.prototype.slice.call(container.getElementsByClassName("card"));
+      elementsArray.forEach(function(element){
+        container.removeChild(element);
+      })
+      shuffleArray(elementsArray);
+      elementsArray.forEach(function(element){
+        container.appendChild(element);
+      })
+    }
+
+    function shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+        return array;
+    }
+
     </script>
     <script>
         function startTime() {
@@ -46,7 +70,8 @@
 
 </head>
 
-<body onload="startTime()">
+<body onload= "shuffle()">
+
   <div class="weather">
     <a class="weatherwidget-io" href="https://forecast7.com/en/32d93n80d00/hanahan/?unit=us" data-label_1="HANAHAN"
     data-label_2="WEATHER" data-theme="original">HANAHAN WEATHER</a>
@@ -73,7 +98,7 @@
       </div> -->
       
 
-      <div class="staff">
+      <div class="staff" id="staff">
         <div class="card">
           <img src="https://cdn2.cityofhanahan.com/wp-content/uploads/2018/01/15090222/IMG_7927-200x200.jpg" alt="Larry" style="width:75%">
           <div class="container">
@@ -117,6 +142,7 @@
           </div>
         </div>
       </div>
+      
       <div class="news2">
         <!-- <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="134930/"></script> -->
         <h2>Here's what's happening</h2>
@@ -185,5 +211,7 @@
     <center><small><b> &#xA9 Jon Ellwood 2021</b></small></center>
 	</div>
   <script src="leafscene.js"></script>
+  
+  
 </body>
 </html>
