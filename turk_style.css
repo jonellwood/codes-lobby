@@ -304,15 +304,15 @@ html {
   
   @keyframes shake {
     0% {
-      -webkt-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
     }
     50% {
-      -webkt-transform: rotate(-10deg);
+      -webkit-transform: rotate(-10deg);
       transform: rotate(-10deg);
     }
     100% {
-      -webkt-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
     }
   }
