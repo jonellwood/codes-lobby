@@ -49,6 +49,9 @@ h3 {
   margin: 20px;
   width: 100%;
   background-color: #f5f5f520;
+  font-size: larger;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px whitesmoke;
 }
 .staff {
   display: grid;
